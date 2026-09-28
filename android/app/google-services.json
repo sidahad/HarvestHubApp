@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "269016337035",
+    "project_id": "harvesthub-7b94f",
+    "storage_bucket": "harvesthub-7b94f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269016337035:android:ee03aadf2c50416c4ba28e",
+        "android_client_info": {
+          "package_name": "com.example.harvesthub_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269016337035-6hhigil8481a2rsfi5o26t4g0hvgcqev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harvesthub_app",
+            "certificate_hash": "0c5a297cf9d0adde3d5f0d5e3a774d40d0a1484b"
+          }
+        },
+        {
+          "client_id": "269016337035-bb1ttadrahhmjthob0nu8r8samhp0d1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8Ph-tQ8-Gb5nFsWu_oKzjNcO8P-qVO64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269016337035-bb1ttadrahhmjthob0nu8r8samhp0d1n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "269016337035-a9csjo5m8ldq3hsv4rit3v83jq3sv0i5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.harvesthubApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

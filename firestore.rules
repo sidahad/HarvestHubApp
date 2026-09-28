@@ -1,0 +1,86 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if true;
+      match /{allSubcollections=**} {
+        allow read, write: if true;
+      }
+    }
+
+    match /pickup_slots/{slotId} {
+      allow read, write: if true;
+    }
+
+    match /orders/{orderId} {
+      allow read, write: if true;
+    }
+
+    match /products/{productId} {
+      allow read, write: if true;
+    }
+
+    match /reviews/{reviewId} {
+      allow read, write: if true;
+    }
+
+    match /categories/{categoryId} {
+      allow read, write: if true;
+    }
+
+    match /farmers/{farmerId} {
+      allow read, write: if true;
+    }
+
+    match /conversations/{conversationId} {
+      allow read, write: if true;
+
+      match /messages/{messageId} {
+        allow read, write: if true;
+      }
+    }
+
+    match /followed_farmers/{followId} {
+      allow read, write: if true;
+    }
+
+    match /safety_profiles/{userId} {
+      allow read, write: if true;
+    }
+
+    match /reports/{reportId} {
+      allow read, write: if true;
+    }
+
+    match /customer_gamification/{userId} {
+      allow read, write: if true;
+      match /{sub=**} {
+        allow read, write: if true;
+      }
+    }
+
+    match /farmer_gamification/{farmerId} {
+      allow read, write: if true;
+      match /{sub=**} {
+        allow read, write: if true;
+      }
+    }
+
+    match /notifications/{notificationId} {
+      allow read, write: if true;
+    }
+
+    match /contact_messages/{messageId} {
+      allow read, write: if true;
+    }
+
+    match /email_otps/{email} {
+      allow read, write: if true;
+    }
+
+    match /mail/{id} {
+      allow read, write: if false;
+    }
+  }
+}
+
